@@ -1,0 +1,177 @@
+import {StyleSheet, Dimensions} from 'react-native';
+import {FONTSIZE, COLORS} from '../../utils/index';
+import {RFValue, RFPercentage} from 'react-native-responsive-fontsize';
+const {width, height} = Dimensions.get('screen');
+import {scale, moderateScale, verticalScale} from 'react-native-size-matters';
+const styles = StyleSheet.create({
+  color_stutsBar: {color: COLORS.white},
+  color_textInput: {color: COLORS.gray2},
+  black2: {color: COLORS.black2},
+  botton_radiobotton: {color: COLORS.mainBlue},
+
+  container: {
+    backgroundColor: COLORS.white,
+    paddingHorizontal: RFValue(15),
+    paddingTop: RFValue(25),
+    flex: 1,
+  },
+  containerHeader: {
+    flexDirection: 'row-reverse',
+    alignItems: 'center',
+    marginBottom: verticalScale(10),
+  },
+  header: {
+    width: '100%',
+    color: COLORS.mainBlack,
+    fontSize: FONTSIZE.xxlarge,
+    fontWeight: '500',
+    textAlign: 'center',
+    alignSelf: 'center',
+    fontFamily: 'Cairo',
+  },
+  viewIcon: {
+    width: scale(32),
+    height: scale(32),
+    borderColor: COLORS.mainBlack,
+    borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: scale(16),
+    marginRight: -width * 0.09,
+  },
+  ViewInput: {
+    width: scale(280),
+    height: scale(36),
+    backgroundColor: COLORS.white,
+    borderRadius: RFValue(8),
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
+    shadowColor: COLORS.mainBlack,
+    shadowOpacity: 0.5,
+    alignSelf: 'center',
+    shadowOffset: {
+      width: scale(10),
+      height: verticalScale(10),
+    },
+    elevation: 1,
+  },
+  insideTextInput: {
+    color: COLORS.black,
+    fontSize: RFPercentage(2),
+    textAlign: 'right',
+    marginLeft: RFValue(5),
+    fontFamily: 'Cairo',
+  },
+  text: {
+    color: '#000000',
+    fontSize: 16,
+    paddingTop: 5,
+    fontFamily: 'Cairo',
+  },
+  button: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: scale(20),
+  },
+  dropdown: {
+    backgroundColor: COLORS.white,
+    padding: width * 0.01111,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: RFValue(8),
+    marginTop: verticalScale(6),
+    borderColor: 'transparent',
+  },
+  viewDropdown: {
+    // marginTop: verticalScale(5),
+  },
+  solidLine: {
+    width: '100%',
+    height: scale(1),
+    backgroundColor: COLORS.gray2,
+    marginVertical: verticalScale(15),
+  },
+  text2: {
+    paddingTop: 10,
+    fontSize: FONTSIZE.xlarge,
+    fontWeight: '500',
+    color: COLORS.mainBlack,
+    fontFamily: 'Cairo',
+  },
+  containerRadio: {
+    alignItems: 'center',
+  },
+  textCheck: {
+    fontSize: FONTSIZE.large,
+    color: COLORS.mainBlack,
+    fontFamily: 'Cairo',
+  },
+  containerCheck: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: verticalScale(10),
+  },
+  containerInput: {
+    flexDirection: 'row',
+    marginTop: verticalScale(10),
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  text3: {
+    color: COLORS.mainBlack,
+    fontSize: FONTSIZE.large,
+    width: '30%',
+    fontFamily: 'Cairo',
+  },
+  view: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  input: {
+    width: scale(48),
+    height: scale(40),
+    backgroundColor: COLORS.white,
+    borderRadius: RFValue(8),
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: COLORS.mainBlack,
+    shadowOpacity: 0.5,
+    shadowOffset: {
+      width: scale(10),
+      height: verticalScale(10),
+    },
+    elevation: 1,
+    textAlign: 'center',
+    fontSize: FONTSIZE.medium,
+    color: COLORS.mainBlack,
+  },
+  text4: {
+    color: COLORS.mainBlack,
+    fontSize: FONTSIZE.large,
+    marginRight: scale(10),
+    fontFamily: 'Cairo',
+  },
+  viewBtn: {
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    height: RFValue(48),
+    backgroundColor: '#3A82F8',
+    borderRadius: RFValue(8),
+    marginTop: RFValue(30),
+    alignSelf: 'center',
+    paddingHorizontal: scale(10),
+    marginBottom: verticalScale(40),
+  },
+  btnText: {
+    fontSize: FONTSIZE.xlarge,
+    color: COLORS.white,
+    fontFamily: 'Cairo',
+  },
+});
+
+export default styles;

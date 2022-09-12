@@ -1,0 +1,132 @@
+import {StyleSheet, Dimensions} from 'react-native';
+import {FONTSIZE, COLORS} from '../../utils/fonts.util';
+import {RFValue, RFPercentage} from 'react-native-responsive-fontsize';
+const {width, height} = Dimensions.get('screen');
+import {scale, moderateScale, verticalScale} from 'react-native-size-matters';
+const styles = StyleSheet.create({
+  containerStyle: {
+    flex: 1,
+    backgroundColor: COLORS.white,
+  },
+  headerStyle: {
+    width: width,
+    height: height * 0.0888,
+    flexDirection: 'row',
+    alignSelf: 'center',
+    justifyContent: 'space-around',
+    marginTop: verticalScale(10),
+  },
+  textViewStyle: {
+    width: width * 0.8,
+    height: width * 0.0888,
+    lineHeight: width * 0.1023,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    marginRight: RFValue(25),
+    marginTop: -height * 0.0444,
+  },
+  headerTextStyle: {
+    color: COLORS.mainBlack,
+    fontSize: FONTSIZE.xxlarge,
+    textAlign: 'center',
+    fontWeight: '500',
+    fontFamily: 'Cairo',
+  },
+  viewIcon: {
+    width: scale(32),
+    height: scale(32),
+    borderColor: COLORS.mainBlack,
+    borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: scale(16),
+    marginRight: -width * 0.09,
+  },
+  imageStyle: {
+    width: '90%',
+    alignSelf: 'center',
+    height: height * 0.28567,
+    marginTop: height * 0.0222,
+    borderTopRightRadius: width * 0.02222,
+    borderTopLeftRadius: width * 0.02222,
+  },
+  containerStyle2: {
+    marginTop: width * 0.0111,
+    width: width * 0.49444,
+    height: height * 0.041444,
+  },
+  priceTextStyle: {
+    color: COLORS.mainBlue,
+    fontSize: FONTSIZE.xlarge,
+    width: width * 0.1888,
+    height: height * 0.054796,
+    marginLeft: width * 0.73333,
+    textAlign: 'right',
+    lineHeight: width * 0.1027,
+    marginTop: -height * 0.0296,
+    fontFamily: 'Cairo',
+  },
+  containerStyle3: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: width * 0.3888,
+    height: height * 0.03848,
+    marginLeft: width * 0.05833,
+    marginTop: -height * 0.0296,
+  },
+  profilePhotoStyle: {
+    width: width * 0.06667,
+    height: height * 0.03554,
+    borderRadius: width * 0.03333,
+  },
+  designerTextStyle: {
+    fontSize: FONTSIZE.medium,
+    color: COLORS.mainBlack,
+    marginLeft: width * 0.02777,
+    fontFamily: 'Cairo',
+  },
+  jobTitleStyle: {
+    color: COLORS.gray2,
+    fontSize: FONTSIZE.smaller,
+    marginTop: height * 0.0074,
+    width: width * 0.225,
+    height: height * 0.0355,
+    marginLeft: width * 0.06933,
+    fontFamily: 'Cairo',
+  },
+  reservationButtonStyle: {
+    width: width * 0.1666,
+    height: height * 0.05,
+    borderRadius: width * 0.02222,
+    marginLeft: width * 0.4544,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: COLORS.mainBlue,
+  },
+  textStyle: {
+    fontSize: FONTSIZE.medium,
+    lineHeight: width * 0.07222,
+    color: COLORS.white,
+    fontFamily: 'Cairo',
+  },
+  favoriteButtonStyle: {
+    width: width * 0.08888,
+    height: height * 0.047365,
+    borderRadius: width * 0.0222,
+    backgroundColor: 'rgba(255,255,255,.5)',
+    position: 'absolute',
+    marginTop: height * 0.03552,
+    marginLeft: width * 0.82222,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  servisTextNameStyle: {
+    color: COLORS.mainBlack,
+    fontSize: FONTSIZE.medium,
+    lineHeight: width * 0.07222,
+    textAlign: 'right',
+    fontFamily: 'Cairo',
+  },
+});
+
+export default styles;

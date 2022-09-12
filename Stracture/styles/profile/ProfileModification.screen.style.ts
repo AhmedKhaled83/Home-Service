@@ -1,0 +1,150 @@
+import {StyleSheet, Dimensions, useColorScheme} from 'react-native';
+import {FONTSIZE, COLORS} from '../../utils/index';
+import {RFValue, RFPercentage} from 'react-native-responsive-fontsize';
+const {width, height} = Dimensions.get('screen');
+import {scale, moderateScale, verticalScale} from 'react-native-size-matters';
+const styles = StyleSheet.create({
+  containerStyle: {
+    flex: 1,
+    backgroundColor: COLORS.white,
+  },
+  headerStyle: {
+    width: width,
+    height: height * 0.0888,
+    flexDirection: 'row',
+    alignSelf: 'center',
+    justifyContent: 'space-around',
+    marginTop: height * 0.01288,
+  },
+  textViewStyle: {
+    width: width * 0.8,
+    height: width * 0.0888,
+    lineHeight: width * 0.1023,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    marginRight: width * 0.05555,
+    marginTop: -height * 0.0444,
+  },
+  headerTextStyle: {
+    color: COLORS.mainBlack,
+    fontSize: FONTSIZE.xxlarge,
+    textAlign: 'center',
+    fontFamily: 'Cairo',
+    fontWeight: '500',
+  },
+  viewIcon: {
+    width: scale(32),
+    height: scale(32),
+    borderColor: COLORS.mainBlack,
+    borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: scale(16),
+    marginRight: -width * 0.09,
+  },
+
+  viewImageStyle: {
+    width: width * 0.26111,
+    height: width * 0.26111,
+    marginTop: height * 0.099168,
+    borderRadius: width * 0.1305,
+    position: 'absolute',
+    alignSelf: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  imageStyle: {
+    width: width * 0.2611,
+    height: width * 0.2611,
+    borderRadius: height * 0.1305,
+  },
+  containerStyle3: {
+    borderTopLeftRadius: width * 0.0833,
+    borderTopRightRadius: width * 0.0833,
+    height: height * 0.2,
+    padding: 0.0555,
+  },
+  viewStyle2: {
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+    paddingHorizontal: width * 0.05555,
+    paddingVertical: height * 0.04,
+  },
+  textStyle2: {
+    fontSize: FONTSIZE.xlarge,
+    fontWeight: '400',
+    color: COLORS.black,
+    fontFamily: 'Cairo',
+  },
+  viewStyle3: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    paddingHorizontal: width * 0.05555,
+    alignItems: 'center',
+  },
+  buttonStyle: {
+    height: height * 0.06,
+    width: '45%',
+    backgroundColor: COLORS.mainBlue,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: width * 0.0277,
+  },
+  textStyle3: {color: COLORS.white, fontSize: FONTSIZE.large},
+  textStyle4: {
+    color: COLORS.mainBlack,
+    fontSize: FONTSIZE.medium,
+    marginLeft: width * 0.0444,
+    marginTop: height * 0.177619,
+    lineHeight: height * 0.03848,
+    fontFamily: 'Cairo',
+  },
+  viewStyle4: {
+    height: height * 0.06216,
+    width: width * 0.9111,
+    marginLeft: width * 0.0444,
+    marginTop: height * 0.01184,
+    borderRadius: width * 0.0222,
+    backgroundColor: '#fff',
+    shadowColor: '#1c1c1c',
+    shadowOpacity: 0.5,
+
+    shadowOffset: {
+      width: width * 0.0111,
+      height: width * 0.0111,
+    },
+    elevation: 2,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  viewTextStyle: {
+    fontSize: FONTSIZE.large,
+    color: COLORS.gray2,
+    paddingHorizontal: width * 0.04444,
+    paddingVertical: height * 0.00773,
+    fontFamily: 'Cairo',
+  },
+  buttonStyle2: {
+    width: width * 0.9111,
+    height: height * 0.06216,
+    marginTop: height * 0.08403,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+    borderRadius: width * 0.02222,
+    backgroundColor: COLORS.mainBlue,
+  },
+  textStyle5: {
+    fontWeight: '500',
+    fontSize: FONTSIZE.medium,
+    color: COLORS.white,
+    fontFamily: 'Cairo',
+  },
+  iconStyle: {
+    alignSelf: 'center',
+    position: 'absolute',
+    marginLeft: width * 0.81666,
+  },
+});
+export default styles;
