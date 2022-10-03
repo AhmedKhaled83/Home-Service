@@ -40,8 +40,8 @@ const Login = ({navigation}) => {
 
   // function Login in app
   const LoginApp = async () => {
-    await AsyncStorage.setItem('tokenUser', 'خخخ');
-    await AsyncStorage.setItem('tokenBoarding', 'خخخ');
+    await AsyncStorage.setItem('tokenUser', 'login');
+    await AsyncStorage.setItem('tokenBoarding', 'login');
     dispatch(LogIn('خخخ'));
   };
 
